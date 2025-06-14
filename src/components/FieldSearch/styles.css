@@ -1,4 +1,4 @@
-fieldset {
+.field-search {
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: baseline;
