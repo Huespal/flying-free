@@ -5,7 +5,7 @@ import {
 } from '@/../testsSetup';
 import FieldSearch from '@/components/FieldSearch';
 
-describe('Form > FieldSearch', () => {
+describe('FieldSearch', () => {
   const onSearch = vi.fn();
   const requiredProps = { id: 'test', onSearch };
 
