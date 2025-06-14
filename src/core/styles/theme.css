@@ -4,8 +4,8 @@
   --color-secondary: #005DAD;
   --color-light: #FFFFFF;
   --color-dark: #171717;
-  --gray-alpha-100: rgba(var(--color-dark), 0.05);
-  --gray-alpha-200: rgba(var(--color-dark), 0.08);
+  --color-gray-alpha-100: rgba(var(--color-dark), 0.05);
+  --color-gray-alpha-200: rgba(var(--color-dark), 0.08);
 
   /* Size */
   --size-s: 0.5rem;
