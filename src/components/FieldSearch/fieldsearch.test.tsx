@@ -7,7 +7,7 @@ import FieldSearch from '@/components/FieldSearch';
 
 describe('FieldSearch', () => {
   const onSearch = vi.fn();
-  const requiredProps = { id: 'test', onSearch };
+  const requiredProps = { id: 'test', name: 'test', onSearch };
 
   test('Renders component successfully given required properties', () => {
     render(<FieldSearch {...requiredProps} />);

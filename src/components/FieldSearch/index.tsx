@@ -5,6 +5,7 @@ import './styles.css';
 
 interface FieldSearchProps {
   id: string;
+  name: string;
   label?: string;
   placeholder?: string;
   onSearch: (value: string) => void;
@@ -12,6 +13,7 @@ interface FieldSearchProps {
 
 const FieldSearch = ({
   id,
+  name,
   label,
   placeholder,
   onSearch
@@ -23,6 +25,7 @@ const FieldSearch = ({
       {label && <label htmlFor={id}>{label}</label>}
       <input
         id={id}
+        name={name}
         type="search"
         autoComplete="off"
         placeholder={placeholder}
