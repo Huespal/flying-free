@@ -1,0 +1,28 @@
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: baseline;
+
+  label {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  input {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding-right: var(--space-l);
+    text-overflow: ellipsis;
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  button {
+    grid-column: 3;
+    grid-row: 2/3;
+    padding-right: var(--space-default);
+    padding-left: var(--space-default);
+  }
+}

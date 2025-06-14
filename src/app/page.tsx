@@ -1,10 +1,12 @@
+import { Search } from '@/components/Search';
 import "./page.css";
 
 export default function Home() {
+
   return (
     <div className="page">
       <main>
-        Search
+        <Search />
       </main>
       <footer>
       </footer>
