@@ -1,0 +1,31 @@
+button {
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: filter .5s;
+  padding: var(--space-s);
+
+  &.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+
+  &.btn-secondary {
+    background-color: var(--color-light);
+    outline: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  &:disabled {
+    background-color: var(--color-gray-alpha-100);
+    color: var(--color-dark);
+    outline: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
