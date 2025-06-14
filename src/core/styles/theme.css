@@ -1,0 +1,32 @@
+:root {
+  /* Color */
+  --color-primary: #198CFB;
+  --color-secondary: #005DAD;
+  --color-light: #FFFFFF;
+  --color-dark: #171717;
+  --gray-alpha-100: rgba(var(--color-dark), 0.05);
+  --gray-alpha-200: rgba(var(--color-dark), 0.08);
+
+  /* Size */
+  --size-s: 0.5rem;
+  --size-default: 1rem;
+  --size-m: 1.5rem;
+  --size-l: 2rem;
+
+  /* Space */
+  --space-s: 0.5rem;
+  --space-default: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+
+  /* Breakpoint */
+  /* 480px */
+  --breakpoint-s: 30rem;
+  /* 768px */
+  --breakpoint-m: 48rem;
+  /* 1280px */
+  --breakpoint-default: 80rem;
+
+  /* Font */
+  --font: Arial, Helvetica, sans-serif;
+}
