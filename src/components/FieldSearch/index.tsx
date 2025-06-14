@@ -21,7 +21,7 @@ const FieldSearch = ({
   const [value, setValue] = useState('');
 
   return (
-    <fieldset>
+    <fieldset className="field-search">
       {label && <label htmlFor={id}>{label}</label>}
       <input
         id={id}
@@ -32,7 +32,11 @@ const FieldSearch = ({
         value={value}
         onChange={evt => { setValue(evt.target.value); }}
       />
-      <button type="button" onClick={() => { onSearch(value); }}>🔎</button>
+      <button
+        type="button"
+        aria-label="Search"
+        onClick={() => { onSearch(value); }}
+      >🔎</button>
     </fieldset>
   );
 }
