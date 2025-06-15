@@ -1,12 +1,14 @@
-import { Search } from '@/components/Search';
-import "./page.css";
+import { SearchForm } from '@/components/SearchForm';
+import { getLocations } from '@/domain/locations/api';
+import './page.css';
 
-export default function Home() {
+export default async function Home() {
+  const locations = await getLocations();
 
   return (
     <div className="page">
       <main>
-        <Search />
+        <SearchForm locations={locations} />
       </main>
       <footer>
       </footer>
