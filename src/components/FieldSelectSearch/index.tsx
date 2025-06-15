@@ -14,7 +14,7 @@ const FieldSelectSearch = ({
   ...fieldSearchProps
 }: FieldSelectSearchProps) => {
   const [results, setResults] = useState(options);
-  const [showResults, setShowResults] = useState(true);
+  const [showResults, setShowResults] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const ref = useRef<HTMLUListElement>(null);
 

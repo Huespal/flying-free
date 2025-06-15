@@ -30,7 +30,7 @@ const useClickOutside = (
         removeEventListeners();
       };
     }
-  }, [onClickOutside]);
+  }, [onClickOutside, ref]);
 };
 
 export default useClickOutside;
