@@ -40,4 +40,13 @@ describe('FieldSearch', () => {
       await userEvent.click(searchBtn);
       expect(onSearch).toHaveBeenCalledWith('Test');
     });
+
+  test('Calls onSearch callback successfully given \'isAuto\' property to true',
+    async () => {
+      render(<FieldSearch {...requiredProps} isAuto={true} />);
+
+      const input = screen.getByRole('searchbox');
+      fireEvent.change(input, { target: { value: 'Auto' } });
+      expect(onSearch).toHaveBeenCalledWith('Auto');
+    });
 });
