@@ -52,13 +52,25 @@ input {
   height: var(--space-l);
   width: 12rem;
   font-size: large;
-  padding: 0 var(--space-s);
-  margin: var(--space-s) 0 var(--space-default) 0;
-  border-radius: 2rem;
+  padding: var(--space-default);
+  margin-top: var(--space-s);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radii-l);
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 button {
   cursor: pointer;
   border: none;
   background: transparent;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

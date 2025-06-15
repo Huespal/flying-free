@@ -29,4 +29,16 @@
 
   /* Font */
   --font: Arial, Helvetica, sans-serif;
+
+  /* Radii */
+  --radii-s: 0.5rem;
+  --radii-default: 1rem;
+  --radii-m: 1.5rem;
+  --radii-l: 2rem;
+
+  /* Z Index */
+  --zIndex-hidden: -1;
+  --zIndex-default: 0;
+  --zIndex-m: 1;
+  --zIndex-l: 2;
 }
