@@ -1,12 +1,13 @@
 @import url('../../core/styles/theme.css');
 
-.home-page {
+.search-results-page {
   display: flex;
   flex-direction: column;
   min-height: 85svh;
   padding: 3rem 20rem;
-  gap: var(--space-l);
+  gap: 1rem;
   font-family: var(--font-geist-sans);
+  transition: padding 0.5s;
 }
 
 /* @media (max-width: env(--breakpoint-l)) { */

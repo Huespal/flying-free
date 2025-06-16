@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import './styles.css';
 
 const Header = () => (
   <header className="main-header">
-    <h1>Flying Free</h1>
+    <h1><Link href="/">Flying Free</Link></h1>
   </header>
 );
 

@@ -13,7 +13,8 @@ export default defineConfig({
       include: [
         'src/components/shared/**/*',
         'src/components/Header/*',
-        'src/components/Footer/*'
+        'src/components/Footer/*',
+        'src/domain/**/helpers.ts'
       ]
     }
   }
