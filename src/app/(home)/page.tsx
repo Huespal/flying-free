@@ -8,7 +8,9 @@ export default async function Home() {
   const locations = await getLocations();
 
   return (
-    <div className="page">
+    <div className="home-page">
+      <h1>Search an itinerary</h1>
+      <p>Find your next destination!</p>
       <SearchForm locations={locations} />
     </div>
   );

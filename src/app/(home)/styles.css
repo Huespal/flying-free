@@ -1,19 +1,24 @@
 @import url('../../core/styles/theme.css');
 
-.page {
-  display: grid;
-  grid-template-rows: var(--space-m) 1fr var(--space-m);
-  align-items: center;
-  justify-items: center;
+.home-page {
+  display: flex;
+  flex-direction: column;
   min-height: 85svh;
-  padding: 0 80px;
-  gap: 64px;
+  padding: 3rem 20rem;
+  gap: var(--space-l);
   font-family: var(--font-geist-sans);
 }
 
-@media (max-width: env(--breakpoint-s)) {
-  .page {
+/* @media (max-width: env(--breakpoint-l)) { */
+@media (max-width: 80rem) {
+  .search-results-page {
+    padding: 3rem 10rem;
+  }
+}
+
+/* @media (max-width: env(--breakpoint-m)) { */
+@media (max-width: 48rem) {
+  .search-results-page {
     padding: var(--space-l);
-    padding-bottom: 80px;
   }
 }
