@@ -1,0 +1,25 @@
+@import url('../../core/styles/theme.css');
+
+.search-results-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 85svh;
+  padding: 3rem 20rem;
+  gap: 1rem;
+  font-family: var(--font-geist-sans);
+  transition: padding 0.5s;
+}
+
+/* @media (max-width: env(--breakpoint-l)) { */
+@media (max-width: 80rem) {
+  .search-results-page {
+    padding: 3rem 10rem;
+  }
+}
+
+/* @media (max-width: env(--breakpoint-m)) { */
+@media (max-width: 48rem) {
+  .search-results-page {
+    padding: var(--space-l);
+  }
+}

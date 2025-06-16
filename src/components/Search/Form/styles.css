@@ -2,10 +2,12 @@
   display: flex;
   gap: var(--space-l);
   grid-row-start: 2;
-  align-items: end;
+  align-items: flex-end;
+  margin: 0 auto;
 }
 
-@media (max-width: env(--breakpoint-s)) {
+/* @media (max-width: env(--breakpoint-s)) { */
+@media (max-width: 30rem) {
   .search-form {
     flex-direction: column;
   }
