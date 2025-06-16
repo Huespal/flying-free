@@ -1,4 +1,4 @@
-import FieldSearch, { type FieldSearchProps } from '@/components/FieldSearch';
+import FieldSearch, { type FieldSearchProps } from '@/components/shared/FieldSearch';
 import useClickOutside from '@/core/hooks/useClickOutside';
 import { useMemo, useRef, useState } from 'react';
 import './styles.css';

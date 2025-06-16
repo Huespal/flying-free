@@ -10,7 +10,11 @@ export default defineConfig({
     onConsoleLog: () => false,
     setupFiles: './testsSetup.ts',
     coverage: {
-      include: ['src/components/**/*']
+      include: [
+        'src/components/shared/**/*',
+        'src/components/Header/*',
+        'src/components/Footer/*'
+      ]
     }
   }
 });

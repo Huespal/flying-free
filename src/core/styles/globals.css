@@ -46,6 +46,10 @@ fieldset {
   padding: 0;
   margin: 0;
   border: none;
+
+  .error-message {
+    color: var(--color-error);
+  }
 }
 
 input {
@@ -56,6 +60,10 @@ input {
   margin-top: var(--space-s);
   border: 2px solid var(--color-secondary);
   border-radius: var(--radii-l);
+
+  &.error {
+    border-color: var(--color-error);
+  }
 
   &:focus,
   &:active {

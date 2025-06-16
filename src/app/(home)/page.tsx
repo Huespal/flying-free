@@ -1,6 +1,6 @@
-import { SearchForm } from '@/components/SearchForm';
+import SearchForm from '@/components/Search/Form';
 import { getLocations } from '@/domain/locations/api';
-import './page.css';
+import './styles.css';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,11 +9,7 @@ export default async function Home() {
 
   return (
     <div className="page">
-      <main>
-        <SearchForm locations={locations} />
-      </main>
-      <footer>
-      </footer>
+      <SearchForm locations={locations} />
     </div>
   );
 }

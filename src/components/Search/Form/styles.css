@@ -1,0 +1,12 @@
+.search-form {
+  display: flex;
+  gap: var(--space-l);
+  grid-row-start: 2;
+  align-items: end;
+}
+
+@media (max-width: env(--breakpoint-s)) {
+  .search-form {
+    flex-direction: column;
+  }
+}
