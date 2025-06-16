@@ -3,7 +3,7 @@ import {
   fireEvent,
   render, screen, test, userEvent, vi
 } from '@/../testsSetup';
-import FieldSearch from '@/components/FieldSearch';
+import FieldSearch from '@/components/shared/FieldSearch';
 
 describe('FieldSearch', () => {
   const onSearch = vi.fn();
@@ -49,4 +49,10 @@ describe('FieldSearch', () => {
       fireEvent.change(input, { target: { value: 'Auto' } });
       expect(onSearch).toHaveBeenCalledWith('Auto');
     });
+
+  test('Renders error message given \'error\' message property', () => {
+    render(<FieldSearch {...requiredProps} error="Error" />);
+
+    expect(screen.getByText('Error')).toBeInTheDocument();
+  });
 });

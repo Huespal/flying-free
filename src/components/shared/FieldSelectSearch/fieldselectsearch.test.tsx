@@ -1,7 +1,7 @@
 import {
   describe, expect, fireEvent, render, screen, test, userEvent, vi
 } from '@/../testsSetup';
-import FieldSelectSearch from '@/components/FieldSelectSearch';
+import FieldSelectSearch from '@/components/shared/FieldSelectSearch';
 
 describe('FieldSelectSearch', () => {
   const onSelect = vi.fn();

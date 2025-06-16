@@ -1,0 +1,8 @@
+.main-header {
+  height: 5rem;
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+  align-content: center;
+}

@@ -11,6 +11,7 @@ export interface FieldSearchProps {
   placeholder?: string;
   isAuto?: boolean;
   className?: HTMLElement['className'];
+  error?: string;
   onSearch: (value: string) => void;
 }
 
@@ -22,6 +23,7 @@ const FieldSearch = ({
   placeholder,
   isAuto = false,
   className = '',
+  error,
   onSearch
 }: FieldSearchProps) => {
   const [innerValue, setInnerValue] = useState(value);
@@ -41,6 +43,7 @@ const FieldSearch = ({
       <input
         id={id}
         name={name}
+        className={error ? 'error' : undefined}
         type="search"
         autoComplete="off"
         placeholder={placeholder}
@@ -52,6 +55,7 @@ const FieldSearch = ({
         aria-label="Search"
         onClick={() => { onSearch(innerValue); }}
       >🔎</button>
+      <p className="error-message">{error}</p>
     </fieldset>
   );
 }

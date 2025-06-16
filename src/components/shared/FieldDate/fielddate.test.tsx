@@ -2,7 +2,7 @@ import {
   describe, expect, fireEvent, render, screen, test,
   vi
 } from '@/../testsSetup';
-import FieldDate from '@/components/FieldDate';
+import FieldDate from '@/components/shared/FieldDate';
 
 describe('FieldDate', () => {
   const onChange = vi.fn();
