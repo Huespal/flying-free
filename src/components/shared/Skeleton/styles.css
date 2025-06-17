@@ -1,0 +1,46 @@
+@keyframes fade {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton {
+  background-color: var(--color-disabled);
+  position: relative;
+  border-radius: var(--radii-default);
+  display: inline-flex;
+  line-height: 1;
+  overflow: hidden;
+
+  &::after {
+    content: ' ';
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg,
+        var(--color-disabled),
+        var(--color-grey),
+        var(--color-disabled));
+    transform: translateX(-100%);
+    animation: fade 1.7s ease-in-out 0s infinite normal;
+  }
+}
+
+.skeleton-s {
+  width: 8rem;
+  height: 1rem;
+}
+
+.skeleton-m {
+  width: 10rem;
+  height: 2rem;
+}
+
+.skeleton-l {
+  width: 15rem;
+  height: 3rem;
+}
