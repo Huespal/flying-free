@@ -2,13 +2,22 @@
   display: flex;
   gap: var(--space-l);
   grid-row-start: 2;
-  align-items: flex-end;
+  align-items: flex-start;
   margin: 0 auto;
+
+  button[type='submit'] {
+    margin-top: var(--space-l);
+  }
 }
 
-/* @media (max-width: env(--breakpoint-s)) { */
-@media (max-width: 30rem) {
+/* @media (max-width: env(--breakpoint-m)) { */
+@media (max-width: 48rem) {
   .search-form {
     flex-direction: column;
+
+    button[type='submit'] {
+      margin-top: var(--space-default);
+      align-self: flex-end;
+    }
   }
 }
