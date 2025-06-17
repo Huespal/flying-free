@@ -7,18 +7,19 @@
   padding: 3rem 20rem;
   gap: var(--space-l);
   font-family: var(--font-geist-sans);
+  transition: padding 0.5s;
 }
 
 /* @media (max-width: env(--breakpoint-l)) { */
 @media (max-width: 80rem) {
-  .search-results-page {
-    padding: 3rem 10rem;
+  .home-page {
+    padding: 3rem 8rem;
   }
 }
 
 /* @media (max-width: env(--breakpoint-m)) { */
 @media (max-width: 48rem) {
-  .search-results-page {
+  .home-page {
     padding: var(--space-l);
   }
 }
