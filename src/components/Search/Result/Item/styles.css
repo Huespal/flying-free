@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-default);
   background-color: var(--color-light);
+  border-radius: var(--radii-l);
   padding: var(--space-l);
   border: 2px solid var(--color-primary);
   min-width: 35rem;

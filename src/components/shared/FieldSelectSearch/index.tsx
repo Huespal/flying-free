@@ -11,6 +11,7 @@ interface FieldSelectSearchProps extends Omit<FieldSearchProps, 'onSearch'> {
 const FieldSelectSearch = ({
   options,
   onSelect,
+  error,
   ...fieldSearchProps
 }: FieldSelectSearchProps) => {
   const [results, setResults] = useState(options);
@@ -42,6 +43,7 @@ const FieldSelectSearch = ({
     <div className="field-select-search">
       <FieldSearch
         {...fieldSearchProps} isAuto
+        error={showResults ? undefined : error}
         value={searchValue}
         className={fieldSearchClassName}
         onSearch={onSearch}

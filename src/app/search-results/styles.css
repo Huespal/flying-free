@@ -13,7 +13,7 @@
 /* @media (max-width: env(--breakpoint-l)) { */
 @media (max-width: 80rem) {
   .search-results-page {
-    padding: 3rem 10rem;
+    padding: 3rem 8rem;
   }
 }
 
