@@ -19,6 +19,8 @@
     top: 3.75rem;
     z-index: var(--zIndex-m);
     width: 12rem;
+    max-height: 12rem;
+    overflow-y: auto;
     border-bottom-left-radius: var(--radii-l);
     border-bottom-right-radius: var(--radii-l);
 

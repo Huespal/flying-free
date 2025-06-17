@@ -29,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "jsdom": "^26.1.0",
+    "react-intersection-observer": "^9.16.0",
     "typescript": "^5",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.3"

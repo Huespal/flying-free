@@ -1,6 +1,8 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
+import SearchResultItemSkeleton from '@/components/Search/Result/Item/Skeleton';
+import { ReactNode, useCallback, useLayoutEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 interface InfiniteScrollProps<T,> {
   items: T[];
@@ -17,17 +19,22 @@ const InfiniteScroll = <T,>({
 }: InfiniteScrollProps<T>) => {
   const [page, setPage] = useState(1);
   const [visibleItems, setVisibleItems] = useState(items);
+  const { ref, inView } = useInView({ threshold: 0.5 });
 
-  const loadMore = async () => {
+  const loadMore = useCallback(async () => {
     const response = await request(page + 1);
     setVisibleItems([...visibleItems, ...response.items]);
     setPage(page + 1);
-  }
+  }, [page, request, visibleItems]);
+
+  useLayoutEffect(() => {
+    if (inView) loadMore();
+  }, [inView, loadMore]);
 
   return (
     <>
       {visibleItems.map(children)}
-      {page < totalPages && <button onClick={loadMore}>Load more</button>}
+      {page < totalPages && <SearchResultItemSkeleton ref={ref} />}
     </>
   );
 }
