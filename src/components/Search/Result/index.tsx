@@ -1,6 +1,7 @@
 'use client'
 
 import ResultItem from '@/components/Search/Result/Item';
+import InfiniteScroll from '@/components/shared/InfiniteScroll';
 import { formatDate } from '@/domain/itineraries/helpers';
 import { type Itinerary } from '@/domain/itineraries/types';
 import Link from 'next/link';
@@ -58,7 +59,9 @@ const SearchResult = ({
         from lower starting price to higher. 
       `}</p>
       {results.length <= 0 && <p>There are no itineraries</p>}
-      {results.map((result, index) => <ResultItem key={index} {...result} />)}
+      <InfiniteScroll<Itinerary> items={results}>
+        {(item, index) => <ResultItem key={index} {...item} />}
+      </InfiniteScroll>
     </>
   );
 }
