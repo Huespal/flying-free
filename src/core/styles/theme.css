@@ -4,8 +4,9 @@
   --color-secondary: #005DAD;
   --color-light: #FFFFFF;
   --color-dark: #171717;
+  --color-grey: #B1ADADF9;
+  --color-disabled: #D5D2D2F9;
   --color-error: #C10E0E;
-  --color-disabled: #d5d2d2f9;
 
   /* Size */
   --size-s: 0.5rem;
@@ -20,6 +21,9 @@
   --space-l: 2rem;
 
   /* Breakpoint */
+  /* Breakpoints are defined in the theme but not used.
+  They will be used when it will be possible to use CSS variables
+  in media queries (without CSS processors). */
   /* 480px */
   --breakpoint-s: 30rem;
   /* 768px */
