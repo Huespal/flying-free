@@ -4,9 +4,8 @@ import './styles.css';
 const Footer = () => {
 
   const generateDeepLink = () => {
-    /* userAgentData should not be used in Production. It is stil experimental:
-    https://developer.mozilla.org/en-US/docs/Web/API/NavigatorUAData/mobile */
-    // @ts-ignore
+    // @ts-expect-error userAgentData should not be used in Production. It is stil experimental:
+    // https://developer.mozilla.org/en-US/docs/Web/API/NavigatorUAData/mobile
     const isMobile = navigator.userAgentData?.mobile;
     const username = 'daniel-san-luis';
     const prefix = isMobile ? 'linkedin://' : 'https://www.linkedin.com/';

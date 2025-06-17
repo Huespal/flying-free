@@ -18,3 +18,20 @@ export interface Itinerary {
   carrier: string;
   price: number;
 }
+
+interface Pagination {
+  currentPage: number;
+  total: number;
+  totalPages: number;
+}
+
+export interface ItinerariesResponse {
+  items: Itinerary[];
+  pagination: Pagination;
+}
+
+export interface ItineraryFilters {
+  from?: string | null;
+  to?: string | null;
+  date?: string | null;
+}
