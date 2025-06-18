@@ -66,6 +66,30 @@ ul {
   margin: 0;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 85svh;
+  padding: 3rem 20rem;
+  gap: var(--space-default);
+  font-family: var(--font-geist-sans);
+  transition: padding 0.5s;
+}
+
+/* @media (max-width: env(--breakpoint-l)) { */
+@media (max-width: 80rem) {
+  .page {
+    padding: 3rem 8rem;
+  }
+}
+
+/* @media (max-width: env(--breakpoint-m)) { */
+@media (max-width: 48rem) {
+  .page {
+    padding: var(--space-l);
+  }
+}
+
 .disabled {
   color: var(--color-disabled);
 }
