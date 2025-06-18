@@ -1,7 +1,6 @@
 import SearchResult from '@/components/Search/Result';
 import { getItineraries } from '@/domain/itineraries/api';
 import { ItineraryFilters } from '@/domain/itineraries/types';
-import './styles.css';
 
 interface SearchResultsProps {
   searchParams: Promise<ItineraryFilters>;
@@ -16,7 +15,7 @@ export default async function SearchResults({
   const pagination = response?.pagination;
 
   return (
-    <div className="search-results-page">
+    <div className="page">
       <SearchResult
         itineraries={itineraries}
         totalPages={pagination.totalPages ?? 1}
